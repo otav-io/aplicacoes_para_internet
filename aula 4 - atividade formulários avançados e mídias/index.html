@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ficha de personagens e inimigos para campanha de RPG.">
+<title>Fichas de RPG</title>
+
+<style>
+body { font-family: Arial; margin: 0; padding: 10px; }
+img { max-width: 100%; height: auto; }
+form { max-width: 500px; }
+input, select, textarea, button { width: 100%; margin-bottom: 10px; padding: 5px; }
+button { cursor: pointer; }
+:focus { outline: 3px solid blue; }
+@media (min-width: 600px) {
+  article { display: inline-block; width: 45%; vertical-align: top; }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Otavio Fernando Miranda</h1>
+<p>Ficha dos players</p>
+</header>
+
+<nav>
+<a href="#personagens">Personagens</a> |
+<a href="#inimigos">Inimigos</a> |
+<a href="#formulario">Cadastro</a>
+</nav>
+
+<main>
+
+<section id="personagens">
+<h2>Personagens</h2>
+
+<article>
+<img src="personagem1.jpg" alt="Carangueiro guerreiro com espada" width="200" height="200">
+<p>
+<strong>Nome:</strong> CaranGuerreiro<br>
+<strong>Classe:</strong> Guerreiro<br>
+<strong>Vida:</strong> 100<br>
+<strong>Ataque:</strong> 20<br>
+<strong>Descrição:</strong> Um guaiamum forte que usa espada.
+</p>
+</article>
+
+<article>
+<img src="personagem2.jpg" alt="Sapo mago usando magia elemental" width="200" height="200">
+<p>
+<strong>Nome:</strong> SapoMago<br>
+<strong>Classe:</strong> Mago<br>
+<strong>Vida:</strong> 60<br>
+<strong>Ataque:</strong> 35<br>
+<strong>Descrição:</strong> Controla magia elemental.
+</p>
+</article>
+
+</section>
+
+<hr>
+
+<section id="inimigos">
+<h2>Inimigos</h2>
+
+<article>
+<img src="inimigo1.jpg" alt="Galinacio criatura agressiva" width="200" height="200">
+<p>
+<strong>Nome:</strong> Galinacio<br>
+<strong>Classe:</strong> Guerreiro<br>
+<strong>Vida:</strong> 200<br>
+<strong>Ataque:</strong> 30<br>
+<strong>Descrição:</strong> Criatura pequena e agressiva.
+</p>
+</article>
+
+<article>
+<img src="inimigo2.jpg" alt="Salamandro monstro de fogo" width="200" height="200">
+<p>
+<strong>Nome:</strong> Salamandro<br>
+<strong>Classe:</strong> Mago<br>
+<strong>Vida:</strong> 120<br>
+<strong>Ataque:</strong> 80<br>
+<strong>Descrição:</strong> Cospe fogo em inimigos.
+</p>
+</article>
+
+</section>
+
+<hr>
+
+<section id="formulario">
+<h2>Cadastro de Personagem</h2>
+
+<form>
+
+<label for="nome">Nome</label>
+<input type="text" id="nome" name="nome" required>
+
+<label for="vida">Vida</label>
+<input type="number" id="vida" name="vida" required min="1">
+
+<label for="ataque">Ataque</label>
+<input type="number" id="ataque" name="ataque" required min="1">
+
+<label for="classe">Classe</label>
+<select id="classe" name="classe" required>
+<option value="">Selecione</option>
+<option>Guerreiro</option>
+<option>Mago</option>
+<option>Arqueiro</option>
+</select>
+
+
+<label for="descricao">Descrição</label>
+<textarea id="descricao" name="descricao" required></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+<hr>
+
+<section>
+<h2>Mensagem do mestre:</h2>
+
+<video controls width="300">
+<source src="videoImportante.mp4" type="video/mp4">
+<source src="videoImportante.webm" type="video/webm">
+<track src="legendas.vtt" kind="subtitles" srclang="pt" label="Português" default>
+Seu navegador não suporta vídeo.
+</video>
+
+</section>
+
+</main>
+
+<footer>
+<p>Projeto HTML simples para visualização de fichas de RPG.</p>
+</footer>
+
+</body>
+</html>
